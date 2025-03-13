@@ -1,6 +1,10 @@
+<script setup lang="ts">
+import ClientHeader from '~/components/ClientHeader.vue';
+</script>
+
 <template>
     <main>
-        <header>header</header>
+        <ClientHeader>header</ClientHeader>
         <slot />
     </main>
 </template>
