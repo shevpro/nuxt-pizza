@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-    <header>
+    <header class="header container">
         header
     </header>
 </template>

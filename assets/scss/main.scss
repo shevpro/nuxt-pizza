@@ -1,0 +1,30 @@
+html {
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    font: inherit;
+    vertical-align: baseline;
+    background: rgb(255, 255, 255);
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    direction: ltr;
+    min-width: 1024px;
+    height: 100%;
+    overflow: auto;
+    color: rgb(0, 0, 0);
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.4;
+    background: rgb(255, 255, 255);
+    -webkit-font-smoothing: antialiased;
+    font-variant-ligatures: no-common-ligatures;
+}
+
+.container {
+    width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+}

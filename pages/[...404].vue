@@ -6,5 +6,5 @@
 
 
 <template>
-    <div>Page 404</div>
+    <div class="error-page container">Page 404</div>
 </template>

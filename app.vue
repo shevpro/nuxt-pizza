@@ -1,12 +1,12 @@
 <script lang="ts" setup>
   const layout = computed(() => {
     const { meta } = useRoute();
-    return defineAsyncComponent(() => import(`./layouts/${meta.layout ?? 'default'}.vue`));
+    return meta.layout ?? 'default';
   });
 </script>
 
 <template>
-  <component :is="layout">
+  <NuxtLayout :name="layout">
     <NuxtPage />
-  </component>
+  </NuxtLayout>
 </template>
