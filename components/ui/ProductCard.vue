@@ -1,4 +1,5 @@
 <script lang="ts" setup>
+import BaseButton from '~/components/ui/BaseButton.vue';
 import type { IProduct } from '~/types/product';
 
 interface IProps {
@@ -20,7 +21,7 @@ defineProps<IProps>();
     </div>
     <footer class="product-card__footer">
       <div class="product-card__price">от {{ item.currentPrice }} ₽</div>
-      <div></div>
+      <BaseButton type="secondary">Заказать</BaseButton>
     </footer>
   </article>
 </template>
@@ -73,6 +74,12 @@ defineProps<IProps>();
     display: flex;
     justify-content: space-between;
     margin-top: 25px;
+  }
+
+  &__price {
+    display: flex;
+    margin: auto 0;
+    justify-content: center;
   }
 }
 </style>
